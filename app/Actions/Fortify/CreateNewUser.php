@@ -65,7 +65,6 @@ class CreateNewUser implements CreatesNewUsers
     $team->users()->attach($user, ['team_id' => '2']); // يمكن تغيير "member" إلى أي دور مناسب
     $user->current_team_id = '2';
     $user->save();
-
-
+    
     }
 }
